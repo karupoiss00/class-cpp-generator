@@ -25,7 +25,7 @@ function parseClassName(classDeclarationLine)
  */
 function isMethodDeclaration(line)
 {
-	return (line.indexOf(':') === -1) && (line.indexOf('(') !== -1)
+    return (line.indexOf(':') === -1) && (line.indexOf('(') !== -1)
 }
 
 /**
