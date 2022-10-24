@@ -18,3 +18,32 @@ private:
 	Vec2 m_rightBottom;
 };
 ```
+При таких входных данных утилита вернёт следующий результат:
+
+```
+CRectangle::CRectangle()
+{
+
+}
+
+CRectangle::CRectangle(Vec2 leftTop, Vec2 rightBottom)
+{
+
+}
+
+void CRectangle::Draw(ICanvas& canvas) const 
+{
+
+}
+
+Vec2 CRectangle::GetLeftTop() const
+{
+
+}
+
+Vec2 CRectangle::GetRightBottomTop() const
+{
+
+}
+
+```
