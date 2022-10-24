@@ -49,15 +49,15 @@ function createCppFileOfClass(classString) {
 		
         const firstBracketPos = line.indexOf('(')
         const methodNamePos = line.indexOf(' ')
-		const constructorDeclaration = (methodNamePos > firstBracketPos) || methodNamePos === -1
+	const constructorDeclaration = (methodNamePos > firstBracketPos) || methodNamePos === -1
         if (constructorDeclaration)
         {
             resultLine = classSpacePrefix + resultLine;
         }
         else
         {
-			const returnType = resultLine.slice(0, methodNamePos)
-			const methodNameAndParams = resultLine.slice(methodNamePos)
+	    const returnType = resultLine.slice(0, methodNamePos)
+	    const methodNameAndParams = resultLine.slice(methodNamePos)
             resultLine = returnType + classSpacePrefix + methodNameAndParams
         }
 
